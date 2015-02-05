@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run --net host -v /home/dwiel:/home/dwiel -i -t itorch /opt/torch/install/bin/itorch notebook --ip 0.0.0.0
