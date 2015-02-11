@@ -31,14 +31,7 @@ RUN apt-get install -y npm
 # NOTE: this almost works.  soumith has disabled fb.python install which is exactly what we want
 # and so that change needs to be reverted before running ...
 RUN DATE=1 curl -sk https://raw.githubusercontent.com/dwiel/fblualib/master/install_all.sh | bash
-# RUN curl -sk https://raw.githubusercontent.com/dwiel/fblualib/master/install_all.sh | bash
-# RUN ldconfig
-# RUN curl -sk https://raw.githubusercontent.com/dwiel/fblualib/master/install_all.sh | bash
 
-# NOTE: running this just once gets apt-get and nothing else
-# NOTE: running this twice gets missing libfolly and then CMake Error
-# RUN curl -sk https://raw.githubusercontent.com/soumith/fblualib/master/install_all.sh | bash
-# RUN ldconfig
 # RUN curl -sk https://raw.githubusercontent.com/soumith/fblualib/master/install_all.sh | bash
 
 EXPOSE 8888
